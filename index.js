@@ -1,1 +1,2 @@
-const a = "Moses";
+const a = "Akpowu Moses";
+console.log(moses);
