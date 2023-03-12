@@ -94,6 +94,12 @@ for (let i = 0; i < customers.lenght; i++) {
     continue;
   }
 
+  if (hourCustomers > numSeats) {
+    console.log(
+      `The remaining ${hourCustomers} over 20 will be moved to another ${stayDuration}`
+    );
+  }
+
   // Simulate each customer entering and leaving the cafe
   for (let j = 0; j < hourCustomers; j++) {
     const enterTime = currentTime.toISOString();
