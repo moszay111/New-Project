@@ -1,3 +1,14 @@
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  ressend("Hello World");
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
+
 // Define the number of customers for each hour
 const customers = [
   4, 5, 7, 10, 12, 15, 18, 20, 22, 24, 25, 23, 20, 19, 17, 16, 14, 13, 11, 10,
